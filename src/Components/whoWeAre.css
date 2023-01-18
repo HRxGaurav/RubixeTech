@@ -1,0 +1,35 @@
+.main{
+    width: 60%;
+    padding: 50px 0px 40px 0px;
+    
+}
+
+.container{
+    display: flex;
+    padding-top: 40px;
+}
+
+
+
+.whoWeAreimg{
+    height: 270px;
+    width: auto;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+.main2{
+    padding: 50px 0px 40px 0px;
+    background-color: rgb(173, 38, 114);
+    color: white;
+    
+}
+
+.main2_sub{
+    width: 60%;
+
+}
+
+.text, .left{
+    text-align:justify;
+}
