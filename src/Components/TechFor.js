@@ -21,7 +21,7 @@ const TechFor = () => {
           <div className='a2'>
             <br />
             Introducing AI to children in an age <br />
-            /appropriate
+            appropriate
             <br /> manner
           </div>
         </div>
