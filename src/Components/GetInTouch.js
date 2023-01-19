@@ -7,22 +7,22 @@ const GetInTouch = () => {
   const [number, setNumber] = useState("");
   const [valid, setValid] = useState({validName:true, validEmail:true,validNumber:true})
 
-  const looksLikeMail=()=> {
-    var lastAtPos = email.lastIndexOf("@");
-    var lastDotPos = email.lastIndexOf(".");
+  const looksLikeMail=(inputEmail)=> {
+    var lastAtPos = inputEmail.lastIndexOf("@");
+    var lastDotPos = inputEmail.lastIndexOf(".");
     return (
       lastAtPos < lastDotPos &&
       lastAtPos > 0 &&
-      email.indexOf("@@") === -1 &&
+      inputEmail.indexOf("@@") === -1 &&
       lastDotPos > 2 &&
-      email.length - lastDotPos > 2
+      inputEmail.length - lastDotPos > 2
     );
   }
 
   
   const updateValid = () => {
     setValid({
-      validEmail: looksLikeMail() ? true : false,
+      validEmail: looksLikeMail(email) ? true : false,
       validName: fullName === "" ? false : true,
       validNumber: number.length !== 10 ? false : true
     });
